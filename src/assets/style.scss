@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+
+  width: max-content;
+  .box {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    img {
+      max-width: 50px;
+    }
+  }
+}
