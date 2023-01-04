@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import ToDoList from "./components/ToDoList";
 import { PATH } from "./constant/approuter";
+import DemoApi from "./components/DemoApi";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path={PATH.PRODUCTS} element={<Products />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
         <Route path={PATH.TODO} element={<ToDoList />} />
+        <Route path={PATH.API} element={<DemoApi />} />
       </Routes>
       <Footer />
     </div >

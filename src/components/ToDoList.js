@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const ToDoList = () => {
 
@@ -41,7 +42,7 @@ const ToDoList = () => {
 
     return (
         <div className='todo p-5'>
-            <div className="dashboard text-3xl">
+            {/* <div className="dashboard text-3xl">
                 {
                     todo.map((item, index) => <div key={index} className="flex">
                         <p>{item.title}</p>
@@ -53,7 +54,7 @@ const ToDoList = () => {
             <input className='my-[20px] border-black border-solid flex border-[2px] input' type="text" name="" id="" value={valueInput}
                 onChange={handleChange}
             />
-            <button onClick={handleSubmit} className='btn mt-3'>add</button>
+            <button onClick={handleSubmit} className='btn mt-3'>add</button> */}
         </div>
     )
 }

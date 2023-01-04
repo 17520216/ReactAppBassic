@@ -22,6 +22,7 @@ const Header = () => {
                         <li className='m-10'><Link to={PATH.INDEX}>Home</Link></li>
                         <li className='m-10'><Link to={PATH.PRODUCTS}>Products</Link></li>
                         <li className='m-10'><Link to={PATH.TODO}>To do List</Link></li>
+                        <li className='m-10'><Link to={PATH.API}>Demo Api</Link></li>
                     </ul>
             }
 
@@ -30,3 +31,17 @@ const Header = () => {
 }
 
 export default Header
+
+
+
+
+/* <-------  
+To Router:
+
+ - 1 path -> đường dẫn đến element bên dưới
+ - 2 Elements -> Nội dung mình sẽ show ra trong cái đường dẫn bên trên
+
+
+ - Notes:   Tag link chỉ đưa mình tới đường dẫn mình muốn . Hết
+
+-------> */
