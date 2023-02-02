@@ -47,19 +47,17 @@ const DemoApi = () => {
         // setCount(res);
 
 
-        const res = await axios.get('https://api.chucknorris.io/jokes/random')
-        console.log('🚀res---->', res);
 
-        if (res) {
-            setLoading(false);
-            // setListName(res2.data.docs);
-            setBook(res.data)
-        } else {
-            // setLoading(false);
-            // alert("something went wrong");
+        try {
+            const res = await axios.get('https://api.chucknorris.io/jokes/random')
+            if (res) {
+
+            }
+
+
+        } catch (error) {
+            console.log('🚀error---->', error);
         }
-
-
 
     }
 
@@ -85,3 +83,17 @@ const DemoApi = () => {
 }
 
 export default DemoApi;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

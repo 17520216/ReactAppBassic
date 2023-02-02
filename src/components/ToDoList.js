@@ -21,13 +21,13 @@ const ToDoList = () => {
 
     const handleSubmit = () => {
 
-        const newTodo = [...todo, {
-            title: valueInput,
-            status: false,
-        }]
-        console.log('newTodo---->', newTodo);
-        setTodo(newTodo);
-        setValueInput("")
+        // const newTodo = [...todo, {
+        //     title: valueInput,
+        //     status: false,
+        // }]
+        // console.log('newTodo---->', newTodo);
+        // setTodo(newTodo);
+        // setValueInput("")
     };
 
 
@@ -40,13 +40,14 @@ const ToDoList = () => {
 
     }
 
+
     return (
         <div className='todo p-5'>
-            {/* <div className="dashboard text-3xl">
+            <div className="dashboard text-3xl">
                 {
                     todo.map((item, index) => <div key={index} className="flex">
                         <p>{item.title}</p>
-                        <div className='mx-[20px] flex'>status: <p>{item.status ? <p className="badge badge-primary">Chúc mừng bạn đã hoàn thành nhiệm vụ</p> : <p className="badge badge-secondary">Vui lòng hoàn thành nhiêm vụ</p>}</p></div>
+                        <div className='mx-[20px] flex'>status: <div>{item.status ? <p className="badge badge-primary">Chúc mừng bạn đã hoàn thành nhiệm vụ</p> : <p className="badge badge-secondary">Vui lòng hoàn thành nhiêm vụ</p>}</div></div>
                         <button className={`btn ${item.status ? "btn-error" : "btn-success"}`} onClick={() => checkDone(index)}>{item.status ? "UNDONE" : "DONE"}</button>
                     </div>)
                 }
@@ -54,9 +55,10 @@ const ToDoList = () => {
             <input className='my-[20px] border-black border-solid flex border-[2px] input' type="text" name="" id="" value={valueInput}
                 onChange={handleChange}
             />
-            <button onClick={handleSubmit} className='btn mt-3'>add</button> */}
+            <button onClick={handleSubmit} className='btn mt-3'>add</button>
         </div>
     )
 }
 
-export default ToDoList
+export default ToDoList;
+

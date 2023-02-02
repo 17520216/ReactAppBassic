@@ -23,6 +23,7 @@ const Header = () => {
                         <li className='m-10'><Link to={PATH.PRODUCTS}>Products</Link></li>
                         <li className='m-10'><Link to={PATH.TODO}>To do List</Link></li>
                         <li className='m-10'><Link to={PATH.API}>Demo Api</Link></li>
+                        <li className='m-10'><Link to={PATH.FORM}>Form Api</Link></li>
                     </ul>
             }
 
